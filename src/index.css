@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app__label {
+  @apply block mb-2 font-bold text-[14px] tracking-widest
+}
+
+.app__input {
+  @apply border-2 rounded-md p-2 w-full outline-none transition-colors duration-200
+}
+
+.input-error {
+  @apply border-red-errors
+}
+
+.app__form__div {
+  @apply mb-6
+}
+
+.app__backCard {
+  @apply max-w-[300px] desktop:max-w-[350px] ml-auto mr-4 pt-8 desktop:absolute desktop:top-[40%] desktop:translate-y-1/2 desktop:right-0 desktop:translate-x-1/2
+}
+
+.app__frontCard {
+  @apply bg-front-card text-white aspect-video w-[300px] desktop:w-[350px] bg-contain bg-no-repeat absolute top-[125px] left-4 p-6 flex flex-col justify-between desktop:top-[40%] desktop:-translate-y-[35%] desktop:right-0 desktop:left-auto desktop:translate-x-[20%]
+}
